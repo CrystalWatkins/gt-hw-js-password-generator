@@ -7,52 +7,50 @@ function writePassword() {
   
   if (lengthOfPassword < 8 || lengthOfPassword > 128) {
     alert("Please enter a Number between 8 and 128")
+    return writePassword();
   } else if (isNaN(lengthOfPassword)) {
     alert("Please enter a valid number.");
     return writePassword();
   }
   console.log(lengthOfPassword);
 
-  var upperCase = confirm("Do you want Upper Case Letters- Click OK or Cancel");
-  var lowerCase = confirm("Do you want Lower Case Letters- Click OK or Cancel");
+  var upperCaseLetters = confirm("Do you want Upper Case Letters- Click OK or Cancel");
+  var lowerCaseLetters = confirm("Do you want Lower Case Letters- Click OK or Cancel");
   var numbers = confirm("Do you want Numbers- Click OK or Cancel");
   var specialCharacters = confirm("Do you want Special Characters- Click OK or Cancel");
 
-  var upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
-    "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  var lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
-    "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];git 
+  var upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]; 
   var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  var specialCharacters = ["!", "@", "#", "$", "%", "^", "*", "_", "+", "~", "|", "?",
-    "-", "=", "?"];
+  var specialCharacters = ["!", "@", "#", "$", "%", "^", "*", "_", "+", "~", "|", "?","-", "=", "?"];
 
   var userOption = [];
 
-  if (upperCase) {
-    userOption = userOption.concat(upperLetters);
+  if (upperCaseLetters) {
+    userOption = userOption.concat(upperCaseLetters);
   }
 
-  if (lowerCase) {
-    userOption = userOption.concat(lowerLetters);
+  if (lowerCaseLetters) {
+    userOption = userOption.concat(lowerCaseLetters);
   }
 
   if (numbers) {
-    userOption = userOption.concat(num);
+    userOption = userOption.concat(numbers);
   }
 
   if (specialCharacters) {
-    userOption = userOption.concat(characters);
+    userOption = userOption.concat(specialCharacters);
   }
 
   if (userOption.length === 0) {
     alert("please select at least one character type");
-    lengthOfPassword = prompt("question");
+    return lengthOfPassword();
   }
 
   console.log(userOption);
 
   var password = "";
-
+  
   for (var i = 0; i < lengthOfPassword; i++) {
     var ranNum = Math.floor(Math.random() * userOption.length);
     console.log(ranNum);
