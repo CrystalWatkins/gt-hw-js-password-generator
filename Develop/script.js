@@ -44,21 +44,16 @@ function writePassword() {
   }
   console.log(userOption);
 
+  var password= "";
   for (var i=0; i  < lengthOfPassword; i++) {
     var ranNum = Math.floor(Math.random() * userOption.length);
+    console.log(ranNum);
+    password += userOption[ranNum];
   }
+  
+console.log(password);
 
-  // var password = "";
-
-    // console.log(ranNum);
-
-    // password += userOption[ranNum];
-    // console.log(password);
-
-    // console.log(userOption[ranNum]);
-  // }
-
-var password = generatePassword();
+// var password = generatePassword();
 var passwordText = document.querySelector("#password");
 
 passwordText.value = password;
