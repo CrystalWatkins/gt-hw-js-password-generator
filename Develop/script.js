@@ -2,6 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
+alert("Please click Generate Password to Begin")
 function writePassword() {
   var lengthOfPassword = prompt("Please enter desired password's length.")
   
@@ -53,7 +54,7 @@ function writePassword() {
   
 console.log(password);
 
-// var password = generatePassword();
+// var password = generatePassword(); 
 var passwordText = document.querySelector("#password");
 
 passwordText.value = password;
