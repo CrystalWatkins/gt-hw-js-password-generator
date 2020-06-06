@@ -67,8 +67,8 @@ SOFTWARE.
 
 ## Badges
 
-![GitHub followers](https://img.shields.io/github/followers/CrystalWatkins?
-style=social)
+![GitHub followers](https://img.shields.io/github/followers/CrystalWatkins?style=social)
+
 
 ## Contributing
 
