@@ -34,7 +34,7 @@ This simple HTML file uses best practices for accessibility in programming.
  
 [Website link for My Portfolio Page](https://github.com/CrystalWatkins/gt-hw-js-password-generator).
 
-![Web Page 1]()
+![Web Page 1](passwordpage.png)
 
 ## Credits
 
