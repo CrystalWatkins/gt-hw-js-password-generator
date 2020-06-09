@@ -38,9 +38,7 @@ This simple HTML file uses best practices for accessibility in programming.
 
 ## Credits
 
-This was an Interactive Portfolio webpage completed as a homework for the Georgia 
-Tech, 
-FullStack Flex Program.
+This was an javascript password generating webpage completed as a homework for the Georgia Tech, FullStack Flex Program.
 
 ## MIT_License
 
